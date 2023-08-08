@@ -15,9 +15,9 @@ import pandas as pd
 original_date=""
 corrected_date=""
 df = pd.DataFrame([], columns = ['文件名' , '原日期', '已修正日期'])
-wrong_date = datetime(2013, 6, 28)  
-right_date= datetime(2023, 3, 30)
-date_shijiancha=(right_date-wrong_date).days #默认日期偏差为3564天
+wrong_date = datetime(2013, 6, 28)  #错误日期
+right_date= datetime(2023, 3, 30)   #对应的正确日期
+date_shijiancha=(right_date-wrong_date).days #默认日期偏差为3562天
 folder_path=""
 def modify_date():
     global corrected_date,original_date,date_shijiancha,folder_path
